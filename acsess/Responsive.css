@@ -1,0 +1,109 @@
+/*Mobile */
+
+@media (max-width: 46.1875em){
+     
+    #header{
+        overflow: hidden;
+       
+    }
+
+      #nav li{
+        display: block;
+    }
+
+   #header .ti-search{
+        display: none;
+    }
+
+    #header .ti-menu{
+        right: 0;
+        top: 0;
+  
+    color: white;
+    padding: 0 16px;
+    line-height: 46px;
+    cursor: pointer;
+    position: absolute;
+    }
+
+    #header .ti-menu:hover{
+        background-color: rgba(196, 188, 188, 0.3);
+        padding-left: 16px;
+        color: #000;
+    }
+
+   #nav .subnav{
+       position: initial;
+       background-color: #333;
+    width: 414px;
+    padding-left: 40px;
+    border-left: 1px solid black;
+   }
+
+   #nav .subnav li:hover{
+   margin-left: -40px;
+   padding-left: 40px;
+   }
+
+    .Book-Tickets .Book-Tickets_City {
+        width: 100%;
+        display: block;
+        float: none;
+        margin-right: 10px;
+    }
+
+    .input_Contact input {    
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .list_member_Band .Member-Band { 
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
+
+    .input_Contact .Send-input_Contact ,
+    .content-book-Tickets-City .btn-buyTickets {
+    
+        width: 100%;
+    }
+
+}
+
+/*Tablet */
+
+@media (max-width:63.9375em){
+    .content-book-Tickets-City .btn-buyTickets {     
+        padding: 12px 20px;
+    }
+    .input_Contact .Send-input_Contact {
+        padding: 12px 22px;
+    }
+
+    .input_Contact input {
+        padding: 10px;  
+    }
+    .TicketModal .content .CloseTab_footer {
+        padding: 15px 21px;      
+    }
+    .TicketModal .content input {
+        padding: 12px;
+    }
+    .TicketModal .content .btn-PayModal {
+        padding: 19px;
+        margin: 18px 0;
+    }
+    .main-footer i {
+        font-size: 38px;
+        margin-right: 10px;
+    }
+    .main-footer .linkweb {
+        margin: 19px 0;
+        font-size: 23px;
+    }
+    .main-Contact .info_Band {
+        line-height: 2.2;
+    }
+}
+

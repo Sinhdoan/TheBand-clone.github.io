@@ -1,0 +1,506 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    background-color: black;
+    height: 46px;  
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid gray;
+}
+
+#nav>li{
+    display: inline-block;
+    line-height: 46px;
+    position: relative;
+}
+#nav{
+    display: inline-block;
+}
+#nav>li>a{
+    color:#fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    padding: 12px 24px;
+    text-decoration: none;
+}
+#nav .ti-angle-down{
+    font-size: 12px;
+}
+
+#nav>li:hover>a{
+    background-color: darkgrey;
+    color: black;
+}
+
+#nav,
+.subnav{
+    list-style-type: none;
+
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(2, 6, 44, 0.3);
+}
+#nav li:hover .subnav{
+    display: block;
+ 
+}
+.subnav li:hover{
+   
+    background-color: darkgrey;
+}
+
+
+.subnav li a{
+    color: #000;
+    margin-left: -10px;
+}
+
+#header .ti-search{
+    float: right;
+    color: white;
+    padding: 0 16px;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+#header .ti-search:hover{
+    background-color: orangered;
+    padding-left: 16px;
+ 
+}
+
+/*-------End header------------- */
+
+#slider{
+ top: 0;
+  width: 100%;
+ 
+  position: relative;
+   max-height: 50%;
+ 
+}
+
+#slider .img-slider{
+    width: 100%;
+    max-height: 50%;
+    margin-top: 46px;
+    display: block;
+}
+
+#slider .contend-slider{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 32px 16px;
+    color: #fff;
+}
+
+#slider .contend-slider .name-heading_in_img{
+    margin: 10px 0;
+    font-size: 26px;
+}
+
+#slider .contend-slider .subcontent-in_img{
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+
+/*---------------End Slider--------- */
+
+ #Band{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+#content .heading{
+    text-align: center;
+}
+
+.heading .heading_content{
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.heading .subheading_content{
+    margin: 15px 0;
+    opacity: 0.5;
+    font-size: 15px;
+    font-style: italic;
+}
+
+#Band .heading .content_Band{
+    margin: 15px 0;
+    text-align:justify;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.list_member_Band{
+    padding: 32px 0;
+    width: 100%;
+}
+
+.list_member_Band .Member-Band{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+}
+
+.Member-Band .Name-member{
+   
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.Member-Band .img-member-Band{
+    width: 60%;
+    
+    border-radius: 10px;
+}
+
+/*------------End Band--------- */
+#Tour{
+    background-color: black;
+}
+.Tour_Main{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+.Tour_Main>.heading{
+    color: #fff;
+}
+#Tour .date_Tour{
+    background-color: white;
+    list-style-type: none;
+}
+
+#Tour .date_Tour li{
+    font-size: 15px;
+    padding: 12px 24px;
+    color: darkgrey;
+    border-bottom: 1px solid darkgrey;
+}
+
+#Tour .date_Tour .Sold-out-Tour{
+    margin-left: 16px;
+    padding: 2px 8px;
+    background-color: rgb(231, 39, 39);
+    color: white;
+    
+    display: inline-block;
+    
+}
+
+#Tour .date_Tour .number-date-Tour{
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    margin-right: 16px;
+    margin-top: -2px;
+}
+
+.Book-Tickets .content-book-Tickets-City{
+    background-color: white;
+}
+
+.Book-Tickets{
+    max-width: 800px;
+    padding: 32px 8px;
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.Book-Tickets .Book-Tickets_City{
+    width: 33.3333%;
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+   
+}
+
+.Book-Tickets_City .Book-City{
+    width: 100%;
+    display: block;
+}
+
+.Book-Tickets_City .content-book-Tickets-City{
+    padding: 0.150px 16px;
+}
+
+.content-book-Tickets-City h5,
+.content-book-Tickets-City p
+{
+    margin: 15px 0;
+    font-size: 17px;
+}
+.content-book-Tickets-City .time-booK{
+    opacity: 0.60;
+}
+.content-book-Tickets-City .btn-buyTickets{
+    margin-bottom: 16px;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+}
+
+.content-book-Tickets-City .btn-buyTickets:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+/*---------------------End Tour---------------- */
+
+#Contact .main-Contact{
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.main-Contact .info_Band{
+    display: inline-block;
+    margin-bottom: 16px;
+   
+}
+
+.main-Contact .info_Band i{
+    padding-right: 10px;
+  line-height: 1.5;
+}
+.info_Band a{
+    color: #000;
+    opacity: 0.7;
+}
+.info_Band a:hover{
+    color: blue;
+}
+
+.main-Contact .input_Contact{
+    float: right;
+    display: block;
+}
+
+.input_Contact .Send-input_Contact{
+    float: right;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 16px 0;
+    padding: 8px 16px;
+}
+
+.input_Contact .Send-input_Contact:hover{
+    background-color: darkgrey;
+    color: black;
+}
+
+.input_Contact input{
+    border: 1px solid darkgrey;
+    padding: 8px;
+    font-size: 17px;
+  
+}
+
+.input_Contact .Input_Message{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.main-Contact .both_contact{
+    padding: 32px 0;
+}
+/*----------------End Contact------------------- */
+#content .img-maps{
+    width: 100%;
+    max-height: 50%;
+}
+
+/*------------------End content--------------- */
+#footer .main-footer{
+    padding: 64px 16px;
+    text-align: center;
+    opacity: 0.60;
+}
+
+.main-footer .linkweb{
+    margin: 15px 0;
+}
+
+.main-footer .linkweb a{
+    color: inherit;
+}
+
+
+#footer a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    margin: 19px 0;
+    font-size: 23px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+#footer a:hover{
+    color: blue;
+}
+/*--------------------end Footer-------------- */
+
+/*---------------------Begin Modal------------- */
+.TicketModal{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+   background-color: rgba(0, 0, 0, 0.3);
+   position: fixed;
+   align-items: center;
+  justify-content: center;
+  display: none;
+  padding-top: 100px;
+ 
+   
+}
+.TicketModal.open{
+    display: flex;
+}
+
+.TicketModal .Modal_main{
+    background-color: white;
+    width: 900px;
+   margin: 0 32px;
+    position: relative;
+    animation: modalIn ease 0.6s;
+}
+
+@keyframes modalIn{
+    from{
+        transform: translateY(-130px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.Modal_main .Header_Modal{
+    background-color: #009688;
+    text-align: center;
+    padding: 32px 16px;
+  
+}
+
+.Modal_main .icon-closeModal{
+  position: absolute;
+ right: 0;
+ padding: 16px 16px;
+ color: #fff;
+ font-size: 14px;
+
+}
+.Modal_main .icon-closeModal:hover{
+    background-color: darkgrey;
+    color: #000;
+}
+.Header_Modal .Header-name{
+    font-size: 30px;
+    color: white;
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+.TicketModal .content{
+    padding: 0.150px 16px;
+   
+}
+
+.TicketModal .content label{
+    display: block;
+    margin: 15px 0;
+}
+
+.TicketModal .content input{
+    width: 100%;
+    border: 1px solid #009688;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.TicketModal .content .btn-PayModal{
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    background-color: #009688;
+    border: 1px solid #009688;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.TicketModal .content .btn-PayModal:hover{
+    background-color: darkgrey;
+    color: #000;
+    border: 1px solid darkgrey;
+}
+
+.TicketModal .content .CloseTab_footer{
+    background-color: #f44336;
+    color: #fff;
+    margin: 16px 0;
+    padding: 8px 16px;
+    border: 1px solid #f44336;
+    font-size: 16px;
+}
+.TicketModal .content .close_footer{
+    font-size: 11px;
+}
+.TicketModal .content .CloseTab_footer:hover{
+    background-color: darkgrey;
+    color: #000;
+    border: 1px solid darkgrey;
+}
+
+.TicketModal .content .hepl_Modal{
+    float: right;
+    margin: 15px 0;
+}
+
+.TicketModal .hepl_Modal a{
+    color: blue;
+
+}
+
+/*---------------------End Modal------------- */
